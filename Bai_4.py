@@ -10,11 +10,11 @@ a=int(input())
 b=int(input())
 print("a//b=",a//b)
 print("a%b=",a%b)
-"""- TH1: a =5, b < -3: a//b= -2
+"""- TH1: a =5, b =-3: a//b= -2
 a%b= -1
-    - TH2: a < -5, b > 3: a//b= -2
+    - TH2: a = -5, b = 3: a//b= -2
 a%b= 1
-    - TH3: a < -5, b <-3: a//b= 1
+    - TH3: a =-5, b =-3: a//b= 1
 a%b= -2
 
 """
