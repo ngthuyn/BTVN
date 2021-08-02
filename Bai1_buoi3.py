@@ -16,6 +16,6 @@ else:
     if delta > 0:
         print("Phương trình có 2 nghiệm phân biệt:")
         print(f"Nghiệm thứ nhất: x_1={(-b+math.sqrt(delta))/(2*a)}")
-        print(f"Nghiệm thứ nhất: x_2={(-b-math.sqrt(delta))/(2*a)}")
+        print(f"Nghiệm thứ hai: x_2={(-b-math.sqrt(delta))/(2*a)}")
     elif delta==0: print(f"Phương trình có nghiệm kép : x= {-b/(2*a)}")
     else: print(f"Phương trình vô nghiệm.")
