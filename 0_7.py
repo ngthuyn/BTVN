@@ -5,3 +5,8 @@ b=2021
 c=True
 my_tuple=(a,b,c)
 print(my_tuple)
+#unpack
+(A,B,C)=my_tuple
+print(A)
+print(B)
+print(C)
