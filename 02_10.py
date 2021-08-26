@@ -10,6 +10,7 @@
             I have 4 dogs.
             Tom is 6. Jerry is 9. Butt is 3. Wine is 1.
             And they're all mammals, of course."""
+
 class Dog:
     species = 'mammal'
 
@@ -34,34 +35,24 @@ class Bulldog(Dog):
         return f'{self.name} runs {speed}'
  
 
-
-
-
-class Pet:
+class Pets():
     dogs=[]
+    
+    def exercise_2(self):
+        Pets.dogs=[dog1,dog2,dog3,dog4]
+        print(self.dogs[0],end=". ")
+        print(self.dogs[1],end=". ")
+        print(self.dogs[2],end=". ")
+        print(self.dogs[3])
 
-    def __init__(self, dogs):
-        self.dogs = dogs
-   
-    def chtr(self):
-        print(self.dogs,end=". ")
 
-
+# tạo list dogs ở hàm excercise_2
 dog1=Dog("Tom",6).description()
-dog2=Dog("Jelly",9).description()
+dog2=Dog("Jerry",9).description()
 dog3=Dog("Butt",3).description()
 dog4=Dog("Wine",1).description()
-       
+
+# in ra yêu cầu của exercise_2
 print("I have 4 dogs.")
-dogs=Pet(dog1)
-dogs.chtr()
-dogs=Pet(dog2)
-dogs.chtr()
-dogs=Pet(dog3)
-dogs.chtr()
-dogs=Pet(dog4)
-dogs.chtr()
-dog_1=Dog("s",1)
-print("")
-print(f"And they're all {dog_1.species}, of course.")
-print(dogs)
+dog=Pets().exercise_2()
+print(f"And they're all {Dog.species}, of course.")
