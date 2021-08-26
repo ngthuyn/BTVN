@@ -3,14 +3,16 @@
     - print_string - in string nhập vào ở dạng toàn chữ in hoa"""
 
 class NewString:
-    def __init__(self,str=input()):
-        self.str=str
+   
     
     def get_string(self):
+        self.str=input()
         return self.str
 
     def print_string(self):
         print(f"string ở dạng in hoa là {self.str.upper()}")
+
+
 do=NewString()
 do.get_string()
 do.print_string()
