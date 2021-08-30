@@ -2,12 +2,14 @@
 
 def extract_characters(*file):
     list=[*file]
+    a=[]
     for i in range(len(list)):
         with open(list[i],mode='r',encoding='utf-8') as f:
             for line in f:
                 h=line.split()
                 for word in h:
                     for i in range(len(word)):
-                        print(word[i])
+                        a.append(word[i])
+    return set(a)
 
-extract_characters('/Users/Asus/PycharmProjects/pythonCore/f.txt','/Users/Asus/PycharmProjects/pythonCore/vidu.txt')
+print(extract_characters('/Users/Asus/PycharmProjects/pythonCore/f.txt','/Users/Asus/PycharmProjects/pythonCore/vidu.txt'))
